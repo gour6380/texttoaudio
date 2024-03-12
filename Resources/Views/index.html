@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text to Speech Conversion</title>
+</head>
+<body>
+    <h1>Text to Speech Conversion</h1>
+    <form method="POST" action="/convert">
+        <label for="speaker_data">Speaker Data (JSON):</label>
+        <textarea id="speaker_data" name="speaker_data" rows="4" cols="50" placeholder="Enter speaker data JSON"></textarea><br>
+
+        <label for="conversation">Conversation JSON:</label>
+        <textarea id="conversation" name="conversation" rows="4" cols="50" placeholder="Enter conversation JSON"></textarea><br>
+
+        <button type="submit">Convert to Audio</button>
+    </form>
+</body>
+</html>

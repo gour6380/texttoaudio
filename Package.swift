@@ -9,12 +9,13 @@ let package = Package(
     dependencies: [
         // 💧 A server-side Swift web framework.
         .package(url: "https://github.com/vapor/vapor.git", from: "4.89.0"),
+        .package(url: "https://github.com/pvieito/PythonKit.git", branch: "master"),
     ],
     targets: [
         .executableTarget(
             name: "App",
             dependencies: [
-                .product(name: "Vapor", package: "vapor"),
+                .product(name: "Vapor", package: "vapor"), "PythonKit",
             ]
         ),
         .testTarget(name: "AppTests", dependencies: [
